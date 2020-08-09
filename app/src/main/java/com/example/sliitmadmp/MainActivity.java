@@ -21,56 +21,34 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        etSong = findViewById(R.id.etSong);
+
 
     }
 
     public void btnLocal(View view){
-        etSong.setText(R.string.local);
-        local = true;
-        if (mediaPlayer != null)
-            mediaPlayer.release();
-
-        mediaPlayer = MediaPlayer.create(getApplicationContext(),R.raw.song);
-
-
+       //Implement the code here
     }
+
+
     public void btnStream(View view){
-        etSong.setText(R.string.stream);
-        local = false;
-
-        if (mediaPlayer != null)
-            mediaPlayer.release();
-
-        String url = "http://www.hochmuth.com/mp3/Haydn_Cello_Concerto_D-1.mp3"; // your URL here
-        mediaPlayer = new MediaPlayer();
-        mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
-        try {
-            mediaPlayer.setDataSource(url);
-            mediaPlayer.prepare(); // might take long! (for buffering, etc)
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        //Implement the code here
 
 
     }
+
+
     public void play(View view){
+        //Implement the code here
 
-        if (mediaPlayer == null){
-
-            etSong.setText("No media found!");
-        }else {
-            mediaPlayer.start();
-        }
     }
     public void pause(View view){
-        if (mediaPlayer!=null)
-            mediaPlayer.pause();
+        //Implement the code here
+
 
     }
     public void stop(View view){
-        mediaPlayer.release();
-        mediaPlayer = null;
+        //Implement the code here
+
     }
 
 

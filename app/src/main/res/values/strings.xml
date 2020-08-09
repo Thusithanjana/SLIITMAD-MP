@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SLIIT MAD MP</string>
+    <string name="lblNowPlaying">Now Playing</string>
+    <string name="btnLocal">Local File</string>
+    <string name="btnUrl">Stream</string>
+    <string name="btnPlay">Play</string>
+    <string name="btnPause">Pause</string>
+    <string name="btnStop">Stop</string>
+    <string name="local">Sinidu Sudu Muthu Thalawe.mp3</string>
+    <string name="stream">Haydn Cello Concerto.mp3</string>
+</resources>
